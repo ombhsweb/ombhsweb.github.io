@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="post.css">
+    <title>Document</title>
+    <style>
+header {
+    padding: 20px;
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+}
+.sidebar {
+  width: 25%;
+  height:fit-content;
+  min-height: 200px;
+  overflow: auto;
+  position: sticky;
+  top: 5%;
+  
+}
+
+.main {
+  width: 60%;
+  height: 200vh;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.sidebar {
+  border: 1px solid rgb(141, 140, 140);
+  background-color: white;
+  border-radius: 3px;
+  color: #222;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  padding: 2%;
+  background-color: rgb(235, 232, 232);
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  padding-top: 0;
+}
+
+.bottom {
+  justify-self: bottom;
+}
+.topnav {
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+    .main {
+        width: 95%;
+        padding: 0;
+        margin: auto;
+        border: none;
+        background: transparent;
+    }
+    .dis{
+        display:block;
+        margin-bottom:5px;
+    }
+}
+@media screen and (min-width: 590px) {
+  .main{
+    margin-left: 3%;
+    border: none;
+    padding: 0;
+    background: transparent;
+  }
+  .sidebar{
+    margin-right: 3%;
+    text-align: left;
+  }
+  .dis{
+      display:none;
+  }
+}
+.abc{
+    border:none;
+    background:blue;
+    color:white;
+    padding:4px;
+    margin:auto;
+    display:flex;
+    border-radius:4px;
+}
+
+    </style>
+</head>
+<body onload="shiv()">
+    <header>
+        Welcome To EduFreedom
+    </header>
+    	<!-- Nav HTML Area Starting From Here -->
+
+    <div class="topnav" id="myTopnav">
+         <a href="#home" style="text-transform: capitalize;" class="active">
+          <i style="color: yellow;margin-right: 5px;" class="fa fa-home" aria-hidden="true"></i>eduFreedom</a>
+         <a href="#latestjobs">Latest Jobs</a>
+         <a href="#admitcard">Admit Card</a>
+         <a href="#results">Results</a>
+         <a href="#feedback">Feedback</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+         </a>
+    </div>	
+  
+        <!-- End Of The Of The Nav HTML Area -->
+	<!-- Nav Script Area Starting From Here -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+            <!-- End Of The Nav Script Area -->
+    <!-- partial:index.partial.html -->
+    <div class="dis">
+      <a style="text-decoration:none;" href="https://edufreedom.in/tools/"><button class="abc">EduFreedom Image Tools</button></a></div>
+    
+<div class="wrapper">
+    <div class="main">
+    <div style="text-align: center;margin-bottom: 8px;"><b>Recent Updates</b></div>
+      <div class="flex-containers">
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/bseb.jpg" alt="">Since they are the same, 
+            the available space will be divided up equally. 
+            And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/1-1-instagram-1024x1024.webp" alt="">Since they are the same, 
+            the available space will be divided up equally.
+             And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+      </div>
+      <div class="flex-containers">
+
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/bseb.jpg" alt="">Since they are the same, 
+            the available space will be divided up equally. 
+            And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/1-1-instagram-1024x1024.webp" alt="">Since they are the same, 
+            the available space will be divided up equally.
+             And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+      </div>
+      <div style="text-align: center;margin-bottom: 8px; margin-top:7px;"><b>Recent Tech Posts</b></div>
+      <div class="flex-containers">
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/bseb.jpg" alt="">Since they are the same, 
+            the available space will be divided up equally. 
+            And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/1-1-instagram-1024x1024.webp" alt="">Since they are the same, 
+            the available space will be divided up equally.
+             And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+      </div>
+      <div class="flex-containers">
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/bseb.jpg" alt="">Since they are the same, 
+            the available space will be divided up equally. 
+            And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+        <div class="flex-childs">
+          <img class="thumbs" style="float: left;" width="80px" src="thumbs/1-1-instagram-1024x1024.webp" alt="">Since they are the same, 
+            the available space will be divided up equally.
+             And since we have two child elements, they will each take up 50%. Since they...
+        </div>
+        
+      </div>
+
+    </div>
+  
+    <div class="sidebar">
+      <a style="text-decoration:none;" href="https://edufreedom.in/tools/"><button class="abc">EduFreedom Image Tools</button></a>
+      <h3>Trending posts</h3>
+      <ul style="list-style: circle;">
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+        <li>Relevent post goes here.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script>
+    function shiv() {
+      alert("Website is under construction.");
+    }
+    </script>
+  <!-- partial -->
+  <footer>
+    <div style="text-align:center;color:grey;"><hr style="width:97%">Edufreedom.in</div>
+</footer>
+</body>
+</html>
